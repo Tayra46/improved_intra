@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
-/*                                                        ::::::::            */
-/*   dark.css                                           :+:    :+:            */
-/*                                                     +:+                    */
-/*   By: fbes <fbes@student.codam.nl>                 +#+                     */
-/*                                                   +#+                      */
-/*   Created: 2021/11/29 17:39:48 by fbes          #+#    #+#                 */
-/*   Updated: 2022/08/09 12:08:49 by fbes          ########   odam.nl         */
+/*                                                        :::      ::::::::   */
+/*   dark.css                                           :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: hle-roi <hle-roi@student.42.fr>            +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2021/11/29 17:39:48 by fbes              #+#    #+#             */
+/*   Updated: 2023/11/09 13:51:10 by hle-roi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@
 	--pure-white: #000000;
 	--pure-black: #ffffff;
 	--theme-color: #00babc;
-	--theme-color-dark: #02807c;
+	--theme-color-dark: rgba(52, 53, 75, 0.1);
 	--theme-color-light: #00ecef;
 	--success-color: #5cb85c;
 	--warning-color: #df9539;
@@ -31,7 +31,7 @@
 
 	/* background colors */
 	--body-background-color: #12141a;
-	--container-background-color: #1d2028;
+	--container-background-color: #4d4d5f;
 	--list-odd-background-color: #1a1e28;
 	--list-hover-background-color: #272b34;
 	--choice-background-color: #7a8192;
@@ -43,10 +43,10 @@
 	--mark-background-color: #3c3a31;
 	--article-language-background-color: #1A252F;
 	--nav-active-color: #373c48;
-	--nav-hover-color: #474b54;
+	--nav-hover-color: #ffffff;
 
 	/* border colors */
-	--general-border-color: #2d313c;
+	--general-border-color: #575767;
 	--general-border-colorless: rgba(0, 0, 0, 0.3);
 	--choice-border-color: #878fa1;
 	--search-user-video-border-color: #575c68;
@@ -68,8 +68,8 @@
 
 	/* navbar styling */
 	--top-navbar-background-color: #1e212a;
-	--left-navbar-background-color: #292D39;
-	--left-navbar-icon-color: #666e80;
+	--left-navbar-background-color: rgba(52, 53, 75, 0.1);
+	--left-navbar-icon-color: #838996;
 	--left-navbar-icon-color-hover: #ffffff;
 	--left-navbar-icon-color-active: #ffffff;
 	--left-navbar-icon-color-admin: #845459;
@@ -135,4 +135,100 @@
 	/* override event colors */
 	--event-meet: var(--theme-color);
 	--event-dark-meet: var(--theme-color-dark);
+}
+
+body {
+	background-image: url("https://images.unsplash.com/photo-1483728642387-6c3bdd6c93e5?q=80&w=4928&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+.container-fullsize .container-inner-item {
+	opacity: 0.75;
+	box-shadow: inset 0 0 10px #80808c;
+	border: none !important;
+	border-radius: 8px !important;
+}
+
+.row {
+	background-color: rgba(52, 53, 75, 0.1);
+}
+
+.container-item {
+	opacity: 0.75;
+	box-shadow: inset 0 0 10px #80808c;
+	border: none !important;
+	border-radius: 8px !important;
+}
+
+.full-width{
+	border-radius: 0 !important;
+	background-color: rgba(52, 53, 75, 0.1) !important;
+	box-shadow: none !important;
+}
+
+.home-banner {
+	background-image: none !important;
+}
+
+.progress-bar {
+	background: #00babc !important;
+}
+
+.coalition-span {
+	color: #ffffff !important;
+}
+
+.app-sidebar-left {
+	background-color: rgba(52, 53, 75, 0.1);
+}
+
+.app-sidebar-hidden {
+	background-color: rgba(52, 53, 75, 0);
+}
+
+.app-sidebar-hidden .sidebar-item {
+	display: none;
+}
+
+#banner-content-polygon-1 {
+	fill:#00babc;
+}
+
+#path0 {
+	fill: #ffffff !important;
+}
+
+#coalition-cover {
+	background-image: none !important;
+}
+
+.coalition-index-bg {
+	background-image: none !important;
+	opacity: 0.75;
+	box-shadow: inset 0 0 10px #80808c;
+	border: none !important;
+	border-radius: 8px !important;
+	background-color: #4d4d5f;
+}
+
+footer {
+	display: none !important;
+}
+
+.main-navbar {
+	background-color: rgba(52, 53, 75, 0.5) !important;
+}
+
+.help-btn-wrapper {
+	display: none !important;
+}
+
+.nav-separator {
+	display: none !important;
+}
+
+.profile-banner {
+	background-image: none !important;
+	background-color: rgba(52, 53, 75, 0.1);
 }
