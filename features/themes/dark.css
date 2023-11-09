@@ -6,7 +6,7 @@
 /*   By: hle-roi <hle-roi@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/29 17:39:48 by fbes              #+#    #+#             */
-/*   Updated: 2023/11/09 13:51:10 by hle-roi          ###   ########.fr       */
+/*   Updated: 2023/11/09 18:03:39 by hle-roi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,8 +20,8 @@
 	/* main colors */
 	--pure-white: #000000;
 	--pure-black: #ffffff;
-	--theme-color: #00babc;
-	--theme-color-dark: rgba(52, 53, 75, 0.1);
+	--theme-color: #7fb0eb;
+	--theme-color-dark: rgba(0, 0, 0, 0);
 	--theme-color-light: #00ecef;
 	--success-color: #5cb85c;
 	--warning-color: #df9539;
@@ -31,8 +31,8 @@
 
 	/* background colors */
 	--body-background-color: #12141a;
-	--container-background-color: #4d4d5f;
-	--list-odd-background-color: #1a1e28;
+	--container-background-color: rgba(32, 32, 38, 0.75);
+	--list-odd-background-color: rgba(106, 106, 112, 0);
 	--list-hover-background-color: #272b34;
 	--choice-background-color: #7a8192;
 	--search-user-no-image-background-color: #292D39;
@@ -141,42 +141,36 @@ body {
 	background-image: url("https://images.unsplash.com/photo-1483728642387-6c3bdd6c93e5?q=80&w=4928&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
 	background-size: cover;
 	background-attachment: fixed;
+	padding-bottom: 20px !important;
 }
 
 .container-fullsize .container-inner-item {
 	opacity: 0.75;
-	box-shadow: inset 0 0 10px #80808c;
 	border: none !important;
 	border-radius: 8px !important;
-}
-
-.row {
-	background-color: rgba(52, 53, 75, 0.1);
 }
 
 .container-item {
 	opacity: 0.75;
-	box-shadow: inset 0 0 10px #80808c;
 	border: none !important;
 	border-radius: 8px !important;
+	background-color: none !important;
 }
 
 .full-width{
-	border-radius: 0 !important;
-	background-color: rgba(52, 53, 75, 0.1) !important;
-	box-shadow: none !important;
-}
-
-.home-banner {
-	background-image: none !important;
+	background-color: transparent !important;
 }
 
 .progress-bar {
-	background: #00babc !important;
+	background: var(--theme-color) !important;
 }
 
 .coalition-span {
 	color: #ffffff !important;
+}
+
+a {
+	color:#7fb0eb !important;
 }
 
 .app-sidebar-left {
@@ -192,7 +186,7 @@ body {
 }
 
 #banner-content-polygon-1 {
-	fill:#00babc;
+	fill:var(--theme-color);
 }
 
 #path0 {
@@ -205,11 +199,10 @@ body {
 
 .coalition-index-bg {
 	background-image: none !important;
-	opacity: 0.75;
-	box-shadow: inset 0 0 10px #80808c;
 	border: none !important;
 	border-radius: 8px !important;
-	background-color: #4d4d5f;
+	opacity: 0.75;
+	background-color: rgba(32, 32, 38, 0.75);
 }
 
 footer {
@@ -230,5 +223,47 @@ footer {
 
 .profile-banner {
 	background-image: none !important;
-	background-color: rgba(52, 53, 75, 0.1);
+}
+
+.coalitions-index-banner {
+	background-color: rgba(0, 0, 0, 0);
+}
+
+.coalitions-index-banner .p-0 {
+	padding-left: 10px !important;
+	padding-top: 10px !important;
+}
+
+a:not([style*="color:"]):not(.btn):hover {
+	color: #ffffff !important;
+}
+
+.coalition-messages #coalition-message {
+	background-color: var(--container-background-color) !important;
+	opacity: 0.75;
+}
+
+#coalition-page .container-fluid {
+	background-color: rgba(32, 32, 38, 0.75);
+	opacity: 0.75;
+}
+
+.text-left > a {
+	color: #7fb0eb !important;
+}
+
+#coalition-scores .addition .colored {
+	color:#7fb0eb !important;
+}
+
+#coalition-top-body a {
+	color:#7fb0eb !important;
+}
+
+.btn.btn-primary, .btn-primary.broadcasts-filters-btn {
+	color: #ffffff !important;
+}
+
+.btn-info {
+	display: none !important;
 }
