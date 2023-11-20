@@ -6,7 +6,7 @@
 /*   By: hle-roi <hle-roi@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/29 17:39:48 by fbes              #+#    #+#             */
-/*   Updated: 2023/11/09 19:30:16 by hle-roi          ###   ########.fr       */
+/*   Updated: 2023/11/20 12:00:59 by hle-roi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -275,4 +275,8 @@ a:not([style*="color:"]):not(.btn):hover {
 
 .btn.btn-primary:hover {
 	background-color: var(--nav-active-color) !important;
+}
+
+.modal-backdrop {
+	display: none;
 }

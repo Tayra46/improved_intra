@@ -108,6 +108,11 @@
 			"matches": [ "https://meta.intra.42.fr/clusters", "https://meta.intra.42.fr/campus/*/clusters" ],
 			"js": [ "features/clustermap.js" ],
 			"run_at": "document_end"
+		},
+		{
+			"matches": [ "https://profile.intra.42.fr/blocs/18/coalitions" ],
+			"js": [ "features/campus/brussels/coa-colors.js" ],
+			"run_at": "document_idle"
 		}
 	],
 	"background": {
