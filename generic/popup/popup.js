@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
-/*                                                        ::::::::            */
-/*   popup.js                                           :+:    :+:            */
-/*                                                     +:+                    */
-/*   By: fbes <fbes@student.codam.nl>                 +#+                     */
-/*                                                   +#+                      */
-/*   Created: 2022/07/03 12:16:22 by fbes          #+#    #+#                 */
-/*   Updated: 2022/07/03 12:16:22 by fbes          ########   odam.nl         */
+/*                                                        :::      ::::::::   */
+/*   popup.js                                           :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: hle-roi <hle-roi@student.42.fr>            +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2022/07/03 12:16:22 by fbes              #+#    #+#             */
+/*   Updated: 2024/03/18 12:06:54 by hle-roi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -73,14 +73,14 @@ if (buttons.auth) {
 
 if (buttons.openIntra) {
 	buttons.openIntra.addEventListener("click", function(ev) {
-		window.open("https://intra.42.fr/");
+		window.open("htps://intra.42.fr/");
 		window.close();
 	});
 }
 
 if (buttons.manageSlots) {
 	buttons.manageSlots.addEventListener("click", function(ev) {
-		window.open("https://profile.intra.42.fr/slots");
+		window.open("https://slots.s19.be/slots");
 		window.close();
 	});
 }

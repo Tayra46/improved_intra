@@ -96,12 +96,12 @@
 		{
 			"matches": [ "*://profile.intra.42.fr/", "*://*.intra.42.fr/users/*" ],
 			"exclude_matches": [ "*://signin.intra.42.fr/users/sign_in" ],
-			"js": [ "features/profiles.js", "features/logtimes.js", "features/campus/codam/coa-titles.js" ],
+			"js": [ "features/profiles.js", "features/logtimes.js", "features/campus/codam/coa-titles.js", "features/campus/brussels/slots-link.js" ],
 			"run_at": "document_idle"
 		},
 		{
 			"matches": [ "https://projects.intra.42.fr/*" ],
-			"js": [ "features/projects.js" ],
+			"js": [ "features/projects.js", "features/campus/brussels/slots-link.js" ],
 			"run_at": "document_end"
 		},
 		{
